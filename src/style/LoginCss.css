@@ -1,0 +1,59 @@
+*{
+    background-color: rgb(152, 184, 255);
+    
+
+   
+}
+.logo-box{
+    width: 100%;
+    /* background-color: rgb(235, 0, 0); */
+    display: flex;
+    justify-content: center;
+}
+#logo-border-login{
+    border-radius: 20px;
+}
+.login-title-box{
+    display: flex;
+    justify-content: center;
+}
+.login-title{
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    margin-top: 0;
+}
+.form-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#login-form{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+#password-input{
+    margin-top: 10px;
+    border: 0.5px solid;
+
+}
+.input-login-box{
+    padding: 10px;
+    border-radius: 13px;
+    border: 0.5px solid;
+
+}
+
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btn{
+    background-color: blueviolet;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+}
