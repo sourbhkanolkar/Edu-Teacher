@@ -7,8 +7,9 @@ import { doc } from 'firebase/firestore';
 
 
 export default function Internship() {
-  const [internship,setInternship]=useState("");
+  const [internshipCompany,setInternshipCompany]=useState("");
   const [duration,setDuration]=useState("");
+  const [role,setRole]=useState("");
   const [cuInternship,setCuInternship]=useState([]);
 
   useEffect(()=>{
@@ -26,8 +27,9 @@ export default function Internship() {
   const handelSubmit= async (e)=>{
     e.preventDefault();
     const newBook={
-    internship,
-    duration
+    company:internshipCompany,
+    period:duration,
+    role:role
     }
     await EduDataService.addBooks(newBook);
     alert("internship uploaded")
@@ -49,9 +51,17 @@ export default function Internship() {
     <form style={{display:"block",margin:"auto",width:"450px"}}>
   <div className="mb-3">
     <label htmlFor="inter-name" className="form-label">Name of Internship</label>
-    <input type="text" className="form-control" id="inter-name" aria-describedby="emailHelp" onChange={(e)=> setInternship(e.target.value)}  />
+    <input type="text" className="form-control" id="inter-name" aria-describedby="emailHelp" onChange={(e)=> setInternshipCompany(e.target.value)}  />
     <div id="emailHelp" className="form-text"></div>
   </div>
+   
+  <div className="mb-3">
+    <label htmlFor="inter-name" className="form-label">Name of Role</label>
+    <input type="text" className="form-control" id="inter-name" aria-describedby="emailHelp" onChange={(e)=> setRole(e.target.value)}  />
+    <div id="emailHelp" className="form-text"></div>
+  </div>
+
+
   <div className="mb-3">
     <label htmlFor="duration" className="form-label">Duration</label>
     <select className="form-select" id='duration' aria-label="Default select example" onChange={(e)=> setDuration(e.target.value)} >
@@ -77,6 +87,7 @@ export default function Internship() {
           <tr>
             <th scope='col'>#</th>
             <th scope='col'>Name</th>
+            <th scope='col'>Role</th>
             <th scope='col'>Duration</th>
           </tr>
         </thead>
@@ -90,8 +101,9 @@ export default function Internship() {
             return (
               <tr key={doc.id}>
             <th scope='row'>{index+1}</th>
-            <td>{doc.internship}</td>
-            <td>{doc.duration} Months</td>
+            <td>{doc.company}</td>
+            <td>{doc.role} </td>
+            <td>{doc.period} Months</td>
             <button className='btn btn-danger intern-delete-btn' onClick={(e)=> deleteHandele(doc.id)} >Delete</button>
           </tr>
             )
