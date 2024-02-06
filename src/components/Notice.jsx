@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import EduDataService from "../services/edu.services";
+import logo from '../assets/logo.jpeg'
+
 
 export default function Notice() {
   const [notice,setNotice]=useState("");
@@ -39,6 +41,9 @@ export default function Notice() {
  <section id='notice-page'>
     <div className="container">
         <div className="row">
+        <div className="logo-box-intern d-flex justify-content-center">
+     <img src={logo} alt='sdsdsds' id='logo-border-login' width='150px' style={{marginTop:"10px"}} />
+     </div>
         <h2 className='text-center home-title'>UPLOAD NOTICES</h2>
             <div className="col-12">
             <form style={{display:"block",margin:"auto",width:"450px"}} >

@@ -1,0 +1,41 @@
+.filter-box{
+    width: 900px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+#Feedback-section{
+    background-color: gray;
+    height: 100vh;
+}
+.f-title{
+    color: #fff;
+}
+.filter-btn{
+
+ 
+ display: flex;
+ align-items: center;
+ font-weight: 700;
+ 
+
+}
+.feed-btn{
+    background-color: red;
+}
+.feedback-box{
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+   border-radius: 10px;
+
+}
+.feedback-text{
+    /* background-color: rgb(10, 123, 222); */
+    width: 500px;
+    word-wrap: break-word;
+}

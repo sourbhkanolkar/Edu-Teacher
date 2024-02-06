@@ -5,6 +5,7 @@ import Login from './components/Login';
 import Home from './components/Home';
 import Internship from "./components/Internship";
 import Notice from "./components/Notice";
+import Feedback from "./components/Feedback";
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
       <Route path='/home' element={<Home />} />
       <Route path='/internship' element={<Internship />} />
       <Route path='/notice' element={<Notice />} />
+      <Route path='/feedback' element={<Feedback />} />
      </Routes>
      
      </BrowserRouter>

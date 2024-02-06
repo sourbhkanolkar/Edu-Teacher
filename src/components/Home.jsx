@@ -3,6 +3,7 @@ import '../style/HomeCss.css'
 import internshipicon from '../assets/internship.svg';
 import noticesIcon from '../assets/notices-board.svg';
 import {Link } from 'react-router-dom';
+import FeedbackIcon from '../assets/feedback.png';
 
 
 
@@ -52,7 +53,21 @@ export default function Home() {
     </div>
   </div>
 </div>
-      </div> 
+      </div>
+
+      <div className="col-md-4 mt-3">
+      <div className="card c-home " style={{width:"15rem"}}>
+  <img src={FeedbackIcon} className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title text-center">Feedback</h5>
+    <p className="card-text">View Feedback of students </p>
+    <div className="btn-box text-center">
+    <Link to="/feedback"><a href="#" className="btn btn-primary">VIEW</a></Link>
+    </div>
+  </div>
+</div>
+      </div>
+
 
 
 

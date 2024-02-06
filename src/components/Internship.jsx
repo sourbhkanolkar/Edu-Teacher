@@ -4,6 +4,7 @@ import { useState } from 'react';
 import EduDataService from "../services/edu.services";
 import { useEffect } from 'react';
 import { doc } from 'firebase/firestore';
+import logo from '../assets/logo.jpeg'
 
 
 export default function Internship() {
@@ -46,6 +47,10 @@ export default function Internship() {
  <>
  <div className="container">
   <div className="row">
+     <div className="logo-box-intern d-flex justify-content-center">
+     <img src={logo} alt='sdsdsds' id='logo-border-login' width='150px' style={{marginTop:"10px"}} />
+     </div>
+
     <h2 className='text-center'>UPLOAD INTERNSHIP</h2>
     <div className="col-md-12">
     <form style={{display:"block",margin:"auto",width:"450px"}}>
