@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Internship from "./components/Internship";
 import Notice from "./components/Notice";
 import Feedback from "./components/Feedback";
+import Classroom from "./components/Classroom";
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
       <Route path='/internship' element={<Internship />} />
       <Route path='/notice' element={<Notice />} />
       <Route path='/feedback' element={<Feedback />} />
+      <Route path='/classroom' element={<Classroom />} />
      </Routes>
      
      </BrowserRouter>

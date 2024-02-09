@@ -59,9 +59,7 @@ export default function Feedback() {
       </div>
     </div>
 
-    <div className="row">
-      
-        
+  <div className="row">   
       {ALLfeedback.map((doc,index)=>{
             return (
               <div className="col-12  d-flex justify-content-center ">

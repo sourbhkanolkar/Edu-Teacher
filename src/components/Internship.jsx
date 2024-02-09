@@ -38,7 +38,7 @@ export default function Internship() {
   }
   const deleteHandele= async(id)=>{
     await EduDataService.deleteBooks(id);
-    alert("notice delted");
+    alert("notice deleted");
     getInternship();
 
   }
