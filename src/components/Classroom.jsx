@@ -3,6 +3,7 @@ import { ref,uploadBytes } from 'firebase/storage';
 import { FileDb } from '../firebase-config'
 import { useState } from 'react';
 import { v4 } from"uuid";
+import logo from '../assets/logo.jpeg'
 
 export default function Classroom() {
   const [file,setFile]=useState('');
@@ -19,6 +20,11 @@ export default function Classroom() {
    <>
     <div className="container">
       <div className="row justify-content-center">
+       
+      <div className="logo-box-intern d-flex justify-content-center">
+     <img src={logo} alt='sdsdsds' id='logo-border-login' width='150px' style={{marginTop:"10px"}} />
+     </div> 
+
         <h2 className='text-center mt-3'>Upload Notes</h2>
         <div className="col-12" style={{width:"400px"}}>
           <div className="input-form ">

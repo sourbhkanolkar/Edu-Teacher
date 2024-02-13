@@ -1,9 +1,12 @@
 import { db2 } from "../firebase-config";
 import {collection,getDocs,getDoc,addDoc,deleteDoc,doc,query,where} from "firebase/firestore";
 
+
 const bookCollectionRef = collection(db2,"internships");
 const bookCollectionRef2=collection(db2,"notices");
 const FeedCollectionRef3=collection(db2,"feedback");
+
+
 const q = query(collection(db2, 'feedback'), where('field', '==', 'College'));
 const q2 = query(collection(db2, 'feedback'), where('field', '==', 'Teacher'));
 const q3 = query(collection(db2, 'feedback'), where('field', '==', 'Canteen'));
@@ -12,6 +15,8 @@ class EduDataService{
     addBooks = (newBook) =>{
         return addDoc(bookCollectionRef,newBook);
     }
+
+    
     addNotice=(newBook)=>{
         return addDoc(bookCollectionRef2,newBook);
     }

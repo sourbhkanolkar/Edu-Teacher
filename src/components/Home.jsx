@@ -3,8 +3,11 @@ import '../style/HomeCss.css'
 import internshipicon from '../assets/internship.svg';
 import noticesIcon from '../assets/notices-board.svg';
 import classroomIcon from '../assets/Classroom.png';
+import assenIcon from '../assets/assenment.png';
 import {Link } from 'react-router-dom';
 import FeedbackIcon from '../assets/feedback.png';
+import TimetableIcon from '../assets/timetable.jpg';
+import ResultIcon from '../assets/result.png';
 
 
 
@@ -80,7 +83,46 @@ export default function Home() {
     </div>
   </div>
 </div>
-      </div>  
+      </div>
+
+      <div className="col-md-4 mt-3">
+      <div className="card c-home " style={{width:"15rem"}}>
+  <img src={assenIcon} className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title text-center">Assigenment</h5>
+    <p className="card-text">Upload Assigenemnt</p>
+    <div className="btn-box text-center">
+    <Link to="/assignment"><a href="#" className="btn btn-primary">UPLOAD</a></Link>
+    </div>
+  </div>
+</div>
+      </div>   
+
+      <div className="col-md-4 mt-3">
+      <div className="card c-home " style={{width:"15rem"}}>
+  <img src={TimetableIcon} className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title text-center">Timetable</h5>
+    <p className="card-text">Upload Timetable</p>
+    <div className="btn-box text-center">
+    <Link to="/timetable"><a href="#" className="btn btn-primary">UPLOAD</a></Link>
+    </div>
+  </div>
+</div>
+      </div>
+
+       <div className="col-md-4 mt-3">
+      <div className="card c-home " style={{width:"15rem"}}>
+  <img src={ResultIcon} style={{width:"100%",height:"260px"}} className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title text-center">Results</h5>
+    <p className="card-text">Results Timetable</p>
+    <div className="btn-box text-center">
+    <Link to="/result"><a href="#" className="btn btn-primary">UPLOAD</a></Link>
+    </div>
+  </div>
+</div>
+      </div>      
 
 
 

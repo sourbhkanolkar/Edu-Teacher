@@ -7,6 +7,9 @@ import Internship from "./components/Internship";
 import Notice from "./components/Notice";
 import Feedback from "./components/Feedback";
 import Classroom from "./components/Classroom";
+import Assignment from "./components/Assignment";
+import Timetable from "./components/Timetable";
+import Result from "./components/Result";
 
 function App() {
   
@@ -21,6 +24,9 @@ function App() {
       <Route path='/notice' element={<Notice />} />
       <Route path='/feedback' element={<Feedback />} />
       <Route path='/classroom' element={<Classroom />} />
+      <Route path='/assignment' element={<Assignment />} />
+      <Route path='/timetable' element={<Timetable />} />
+      <Route path='/result' element={<Result />} />
      </Routes>
      
      </BrowserRouter>
