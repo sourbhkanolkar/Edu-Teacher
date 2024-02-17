@@ -10,6 +10,7 @@ import Classroom from "./components/Classroom";
 import Assignment from "./components/Assignment";
 import Timetable from "./components/Timetable";
 import Result from "./components/Result";
+import Atten from "./components/Atten";
 
 function App() {
   
@@ -27,6 +28,7 @@ function App() {
       <Route path='/assignment' element={<Assignment />} />
       <Route path='/timetable' element={<Timetable />} />
       <Route path='/result' element={<Result />} />
+      <Route path='/attendance' element={<Atten />} />
      </Routes>
      
      </BrowserRouter>

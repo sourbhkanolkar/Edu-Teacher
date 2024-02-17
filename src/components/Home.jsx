@@ -40,7 +40,7 @@ export default function Home() {
     <h5 className="card-title text-center">Attendance</h5>
     <p className="card-text">upload available Attendance for students</p>
     <div className="btn-box text-center">
-    <a href="#" className="btn btn-primary">UPLOAD</a>
+    <Link to="/attendance"><a href="#" className="btn btn-primary">UPLOAD</a></Link>
     </div>
   </div>
 </div>
