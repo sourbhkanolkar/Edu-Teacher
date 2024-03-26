@@ -33,7 +33,7 @@ export default function Internship() {
     role:role
     }
     await EduDataService.addBooks(newBook);
-    alert("internship uploaded")
+    // alert("internship uploaded")
     getInternship();
   }
   const deleteHandele= async(id)=>{
@@ -77,7 +77,7 @@ export default function Internship() {
 </select>
   </div>
   
-  <button type="submit" onClick={handelSubmit} className="btn btn-primary">Submit</button>
+  <button type="submit" onClick={handelSubmit} className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >Submit</button>
 </form>
 
     </div>
@@ -119,6 +119,24 @@ export default function Internship() {
       </table>
     </div>
    </div>
+   {/* below is for modal */}
+   <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog">
+    <div class="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="exampleModalLabel">INTERNSHIP</h5>
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+           Internship Added
+      </div>
+      <div class="modal-footer">
+        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
 
  </div>
  </>

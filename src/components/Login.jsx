@@ -3,6 +3,7 @@ import '../style/LoginCss.css';
 import logo from '../assets/logo.jpeg';
 import BookDataService from "../services/book.services";
 import { useNavigate } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 
 
 export default function Login() {
@@ -38,9 +39,14 @@ export default function Login() {
             <input type='password' className='input-login-box' id='password-input' placeholder='enter your password' />
           </form>
         </div>
-        <div className="btn-box">
+        <div className="btn-box " >
           <button onClick={login_f} className='btn'>LOGIN</button>
+         
         </div>
+   <div className="admin-link-box d-flex justify-content-center">
+  
+   <Link to="/adminlogin"><a href="#"  style={{marginTop:"10px"}} className="card-link">ADMIN</a></Link>
+   </div>
       </section>
     </>
   );

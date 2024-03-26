@@ -11,6 +11,9 @@ import Assignment from "./components/Assignment";
 import Timetable from "./components/Timetable";
 import Result from "./components/Result";
 import Atten from "./components/Atten";
+import AdminLogin from "./components/AdminLogin";
+import Admin from "./components/Admin";
+
 
 function App() {
   
@@ -29,6 +32,9 @@ function App() {
       <Route path='/timetable' element={<Timetable />} />
       <Route path='/result' element={<Result />} />
       <Route path='/attendance' element={<Atten />} />
+      <Route path='/adminlogin' element={<AdminLogin />} />
+      <Route path='/admin' element={<Admin />} />
+     
      </Routes>
      
      </BrowserRouter>
